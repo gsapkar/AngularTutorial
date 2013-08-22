@@ -25,7 +25,7 @@ var EditCtrl = function ($scope, $location, $routeParams, Todo) {
     $scope.action = "Update";
     var id = $routeParams.editId;
 
-    $scope.item = Todo.get({id:id});
+    $scope.item = Todo.get({ id: id }); var i = 0;
 
     $scope.save = function () {
         Todo.update({id:id}, $scope.item, function () {
